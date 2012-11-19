@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jsCompilerUtility", "jsCompilerUtility\jsCompilerUtility.csproj", "{12013D6B-C401-4FBB-9DA8-2F19FA76C3AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jsCompilerUtilityUnitTests", "jsCompilerUtilityUnitTests\jsCompilerUtilityUnitTests.csproj", "{2C4BBA10-D1F1-4C24-9551-2161FBEF0B7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{487F3B09-CEA6-4D60-B595-C999095DA51C}"
+	ProjectSection(SolutionItems) = preProject
+		jsCompilerUtility.vsmdi = jsCompilerUtility.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = jsCompilerUtility.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12013D6B-C401-4FBB-9DA8-2F19FA76C3AA}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{12013D6B-C401-4FBB-9DA8-2F19FA76C3AA}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{12013D6B-C401-4FBB-9DA8-2F19FA76C3AA}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{12013D6B-C401-4FBB-9DA8-2F19FA76C3AA}.Debug|x86.ActiveCfg = Debug|x86
+		{12013D6B-C401-4FBB-9DA8-2F19FA76C3AA}.Debug|x86.Build.0 = Debug|x86
+		{12013D6B-C401-4FBB-9DA8-2F19FA76C3AA}.Release|Any CPU.ActiveCfg = Release|x86
+		{12013D6B-C401-4FBB-9DA8-2F19FA76C3AA}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{12013D6B-C401-4FBB-9DA8-2F19FA76C3AA}.Release|Mixed Platforms.Build.0 = Release|x86
+		{12013D6B-C401-4FBB-9DA8-2F19FA76C3AA}.Release|x86.ActiveCfg = Release|x86
+		{12013D6B-C401-4FBB-9DA8-2F19FA76C3AA}.Release|x86.Build.0 = Release|x86
+		{2C4BBA10-D1F1-4C24-9551-2161FBEF0B7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4BBA10-D1F1-4C24-9551-2161FBEF0B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C4BBA10-D1F1-4C24-9551-2161FBEF0B7F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2C4BBA10-D1F1-4C24-9551-2161FBEF0B7F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2C4BBA10-D1F1-4C24-9551-2161FBEF0B7F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2C4BBA10-D1F1-4C24-9551-2161FBEF0B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C4BBA10-D1F1-4C24-9551-2161FBEF0B7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C4BBA10-D1F1-4C24-9551-2161FBEF0B7F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2C4BBA10-D1F1-4C24-9551-2161FBEF0B7F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2C4BBA10-D1F1-4C24-9551-2161FBEF0B7F}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
