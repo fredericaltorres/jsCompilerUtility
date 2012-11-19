@@ -18,6 +18,6 @@ Dependencies
 Syntax
 =================
 
-## TypeScript
+### TypeScript
 
 	jsCompilerUtility.exe -typescript filename [-run] [-pause]
