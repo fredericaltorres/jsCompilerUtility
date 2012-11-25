@@ -1,9 +1,9 @@
 /// <reference path="Internal\jsonB.d.ts" />
+/// JsonB Metadata
+var metadata: jsonB.Metadata;
 
-var metadata: Metadata;
- 
 metadata = {
-
+    
 	"_Caption"       	: "{{name}}",
 	"_IDProperty"		: "name",
 	"_DisplayOrder"     : "name,Quantity,Unit,@Order,QuantityRequested,OrderID,OrderDate,DeviceID,@Product Information,Description",
@@ -70,9 +70,9 @@ metadata = {
 		                        },
 		                    ],
 	"_Properties"		: [ 
-								{ Name:"Name", 				Attr:Const.READONLY, Caption:"Name"},
-								{ Name:"Quantity", 			Attr:Const.READONLY }, 
-								{ Name:"QuantityRequested", Attr:Const.EDITABLE, Range:[0, 100] },
-								{ Name:"OrderDate", 		Attr:Const.DATE, Format:"MM/DD/YYYY HH:mm:SS" }, 
+								{ Name:"Name", 				Attr:jsonB.Const.READONLY, Caption:"Name"},
+								{ Name:"Quantity", 			Attr:jsonB.Const.READONLY }, 
+								{ Name:"QuantityRequested", Attr:jsonB.Const.EDITABLE, Range:[0, 100] },
+								{ Name:"OrderDate", 		Attr:jsonB.Const.DATE, Format:"MM/DD/YYYY HH:mm:SS" }, 
 						]
 }
