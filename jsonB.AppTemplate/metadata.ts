@@ -1,7 +1,6 @@
 /// <reference path="Internal\jsonB.d.ts" />
 /// JsonB Metadata
 var metadata: jsonB.Metadata;
-
 metadata = {
     
 	"_Caption"       	: "{{name}}",
@@ -10,27 +9,27 @@ metadata = {
     "_Sort"			   	: "name",
     "_NewProperties"	: [
 		    					{ 
-		    						Name:		"QuantityRequested",
-		    						Value:		0,
-		    						AutoReset:	true,
+		    						"Name":		"QuantityRequested",
+		    						"Value":	0,
+		    						"AutoReset":true,
 		    					}, 
 		    					{
-		    						Name:		"DeviceName",
-		    						Value:		"$DeviceName",
+		    						"Name":		"DeviceName",
+		    						"Value":	"$DeviceName",
 		    					},
 		    					{
-		    						Name:		"DeviceID",
-		    						Value:		"$DeviceID",
+		    						"Name":		"DeviceID",
+		    						"Value":	"$DeviceID",
 		    					},
 		    					{
-		    						Name:		"OrderDate",
-		    						Value:		"$Now",
-		    						AutoReset:	true,
+		    						"Name":		"OrderDate",
+		    						"Value":	"$Now",
+		    						"AutoReset":true,
 		    					},
 		    					{
-		    						Name:		"OrderID",
-		    						Value:		"$Guid",
-		    						AutoReset:	true,
+		    						"Name":		"OrderID",
+		    						"Value":	"$Guid",
+		    						"AutoReset":true,
 		    					},
             			],
 	"_Actions"          : [
@@ -41,18 +40,18 @@ metadata = {
 		    						"AutoPop": 	true,
 		    					},
 		    					{
-		    						"Name":	 "Email Order",
-		    						Method:  "EMail",
-		    						Template:"EMail",
-		    						To:		 "FredericALTorres@gmail.com",
-		    						Subject: "Order {{name}}, Device {{DeviceName}}",
-		    						AutoPop: false,
+		    						"Name":	    "Email Order",
+		    						"Method":   "EMail",
+		    						"Template": "EMail",
+		    						"To":		"FredericALTorres@gmail.com",
+		    						"Subject":  "Order {{name}}, Device {{DeviceName}}",
+		    						"AutoPop":  false,
 		    					},
 		    			],
 	"_Templates"        : [
 								{
-                                    Name:"EMail",
-                                    Value: [
+                                    "Name":"EMail",
+                                    "Value": [
                                         	
 			                            "{{name}}",
 			                            "-------------------------------------------",
@@ -70,9 +69,9 @@ metadata = {
 		                        },
 		                    ],
 	"_Properties"		: [ 
-								{ Name:"Name", 				Attr:jsonB.Const.READONLY, Caption:"Name"},
-								{ Name:"Quantity", 			Attr:jsonB.Const.READONLY }, 
-								{ Name:"QuantityRequested", Attr:jsonB.Const.EDITABLE, Range:[0, 100] },
-								{ Name:"OrderDate", 		Attr:jsonB.Const.DATE, Format:"MM/DD/YYYY HH:mm:SS" }, 
+								{ "Name":"Name", 				"Attr":"READONLY", "Caption":"Name"},
+								{ "Name":"Quantity", 			"Attr":"READONLY" }, 
+								{ "Name":"QuantityRequested",   "Attr":"EDITABLE", "Range":[0, 100] },
+								{ "Name":"OrderDate", 		    "Attr":"DATE", "Format":"MM/DD/YYYY HH:mm:SS" }, 
 						]
 }

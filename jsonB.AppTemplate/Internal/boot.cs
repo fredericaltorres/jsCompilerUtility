@@ -94,7 +94,7 @@ namespace jsonB.App
                 ConsoleOut(String.Format("    {0}", ip), false);
             }
 
-            ConsoleOut("\nWaiting for iOS device - Press any key to stop", false);
+            ConsoleOut("\nWaiting client - Press any key to stop", false);
             
             var host = new NancyHost(new Uri("http://localhost:" + DefaultPort.ToString()));
             host.Start();            
