@@ -1,4 +1,4 @@
-﻿[
+[
     { name:"Turnips", Quantity: 076, Unit:"Pound", Description:"Root vegetable will grow in cold climates." },
     { name:"Watercress", Quantity: 076, Unit:"Pound", Description:"very peppery small salad like leaves" },
     { name:"Watermelon", Quantity: 076, Unit:"Pound", Description:"Sweet tasting gourd reaches enourmous size and definitely the most refreshing fruit there is." },

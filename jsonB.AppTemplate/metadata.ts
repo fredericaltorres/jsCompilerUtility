@@ -1,7 +1,7 @@
-﻿/// <reference path="Internal\jsonB.d.ts" />
+/// <reference path="Internal\jsonB.d.ts" />
 
 var metadata: Metadata;
-
+ 
 metadata = {
 
 	"_Caption"       	: "{{name}}",

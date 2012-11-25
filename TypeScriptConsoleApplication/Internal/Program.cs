@@ -46,28 +46,27 @@ namespace TypeScriptConsoleApplication
             StreamReader errorReader    = null;
             try
             {
-                ProcessStartInfo processStartInfo = new ProcessStartInfo(program, commandLine);
-                processStartInfo.ErrorDialog = false;
-                processStartInfo.UseShellExecute = false;
-                processStartInfo.RedirectStandardError = true;
-                processStartInfo.RedirectStandardInput = false;
+                ProcessStartInfo processStartInfo       = new ProcessStartInfo(program, commandLine);
+                processStartInfo.ErrorDialog            = false;
+                processStartInfo.UseShellExecute        = false;
+                processStartInfo.RedirectStandardError  = true;
+                processStartInfo.RedirectStandardInput  = false;
                 processStartInfo.RedirectStandardOutput = true;
-                processStartInfo.CreateNoWindow = true;
-                processStartInfo.WindowStyle = ProcessWindowStyle.Normal;
+                processStartInfo.CreateNoWindow         = true;
+                processStartInfo.WindowStyle            = ProcessWindowStyle.Normal;
                 
-                Process process = new Process();
-
-                process.StartInfo = processStartInfo;
-                bool processStarted = process.Start();
+                var process = new Process();
+                process.StartInfo   = processStartInfo;
+                var processStarted = process.Start();
 
                 if (processStarted)
                 {
-                    outputReader = process.StandardOutput;
-                    errorReader = process.StandardError;
+                    outputReader    = process.StandardOutput;
+                    errorReader     = process.StandardError;
                     process.WaitForExit();
-                    e.ErrorLevel = process.ExitCode;
-                    e.Output = outputReader.ReadToEnd();
-                    e.ErrorOutput = errorReader.ReadToEnd();
+                    e.ErrorLevel    = process.ExitCode;
+                    e.Output        = outputReader.ReadToEnd();
+                    e.ErrorOutput   = errorReader.ReadToEnd();
                 }
             }
             catch (Exception ex)
