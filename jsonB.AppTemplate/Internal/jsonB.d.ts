@@ -15,7 +15,7 @@ module jsonB {
     }
     export interface MetadataProperty { 
 
-        Attr        : string;
+        Attr        : number;
         Values?     : string[]; // LIST MONOSELECT, MULTISELECT
         Template?   : string;   // EMAIL
         Caption?    : string;   // Any property to change the name display

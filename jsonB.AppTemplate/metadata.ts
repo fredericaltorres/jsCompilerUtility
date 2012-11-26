@@ -1,11 +1,12 @@
 /// <reference path="Internal\jsonB.d.ts" />
 /// JsonB Metadata
 var metadata: jsonB.Metadata;
+
 metadata = {
     
 	"_Caption"       	: "{{name}}",
 	"_IDProperty"		: "name",
-	"_DisplayOrder"     : "name,Quantity,Unit,@Order,QuantityRequested,OrderID,OrderDate,DeviceID,@Product Information,Description",
+	"_DisplayOrder"     : "name,Quantity,Unit,@Order,QuantityRequested,OrderID,OrderDate,DeviceID,@Product Information,Description,WebSite",
     "_Sort"			   	: "name",
     "_NewProperties"	: [
 		    					{ 
@@ -30,6 +31,10 @@ metadata = {
 		    						"Name":		"OrderID",
 		    						"Value":	"$Guid",
 		    						"AutoReset":true,
+		    					},
+                                {
+		    						"Name":		"WebSite",
+		    						"Value":	"http://www.freebase.com/view/en/{{name}}",
 		    					},
             			],
 	"_Actions"          : [
@@ -69,9 +74,11 @@ metadata = {
 		                        },
 		                    ],
 	"_Properties"		: [ 
-								{ "Name":"Name", 				"Attr":"READONLY", "Caption":"Name"},
+								{ "name":"Name", 				"Attr":"READONLY", "Caption":"Name~~"},
 								{ "Name":"Quantity", 			"Attr":"READONLY" }, 
 								{ "Name":"QuantityRequested",   "Attr":"EDITABLE", "Range":[0, 100] },
 								{ "Name":"OrderDate", 		    "Attr":"DATE", "Format":"MM/DD/YYYY HH:mm:SS" }, 
+                                { "Name":"WebSite",             "Attr":"HTML", "Caption":"WebSite about {{name}}" }, 
 						]
 }
+
