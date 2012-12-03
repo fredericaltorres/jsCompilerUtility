@@ -26,7 +26,7 @@ module jsonB {
 
         Name        : string;
         Value       : any;
-        AutoReset   : bool;
+        AutoReset?  : bool;
     }
     export interface Template { 
 
